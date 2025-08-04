@@ -23,3 +23,4 @@ text = """
 summary = summarizer(text, max_length=25, min_length=5, do_sample=False)
 
 print("Главная мысль:", summary[0]['summary_text'])
+#hello
