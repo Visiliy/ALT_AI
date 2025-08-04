@@ -1,9 +1,5 @@
-from transformers import GPT2Tokenizer
+from deep_translator import GoogleTranslator
 
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2_model")
-
-
-text = "Thisisanexampleofmergedtext"
-
-tokens = tokenizer.tokenize(text)
-print(tokens)
+translator = GoogleTranslator(source='auto', target='ru')
+translation = translator.translate("Hello, world!")
+print(translation)

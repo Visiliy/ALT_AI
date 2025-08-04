@@ -1,8 +1,7 @@
 import pdf2image
 import pytesseract
 
-pdf_path = "textset/2508.00545v1.pdf"
-
+pdf_path = "textset/2507.23216v1.pdf"
 pages = pdf2image.convert_from_path(pdf_path, dpi=500)
 
 for i, page in enumerate(pages):
